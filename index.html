@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Portofolio Saya</title>
+	<style>
+		/* Reset CSS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Global Styles */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(90deg, #3F5F90, #0D101C);
+  color: #fff;
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+
+/* Header and Navigation */
+header {
+  background: flex;
+  padding: 1rem 0;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.letters {
+  display: flex;
+  align-items: center;
+}
+
+.letter {
+  display: inline-block;
+  transition: 0.4s;
+  cursor: pointer;
+}
+
+ul {
+    text-transform: uppercase;
+	list-style: none;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+}
+
+nav a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: #ff6600;
+}
+
+/* styling Bagian Media */
+.media{
+    background-color: #000;
+    width: 100%;
+    padding: 3em 1.5em 1em;
+    margin: 2em auto 1em;
+}
+
+.media_img{
+    display: block;
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+    border: 1px solid #020826;
+    margin: 0 auto;
+}
+
+.media_caption{
+    color: #7FFFD4;
+    padding: 0 1em;
+    margin-top: 1.5em;
+}
+
+/* Responsive Bagian Media */
+@media (min-width:35em){
+    .media{
+    padding: 4em 4em 1.5em;
+    }
+    .media_caption{
+        margin-top: 1em;
+    }
+}
+
+@media (min-width:50em){
+    .media{
+        padding: 5em 5em 3em;
+    }
+    .media_img{
+        max-width: min(100% 900px);
+    }
+    .media_caption{
+        max-width: 720px;
+        margin: 1em auto 0;
+    }
+}
+
+/* Section Styles */
+.section {
+  padding: 4rem 0;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.container h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.project {
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+/* Gaya tombol untuk proyek */
+.project-button {
+  display: inline-block;
+  margin-top: 10px;
+}
+
+.project-button button {
+  background-color: #ff6600; /* Warna latar belakang tombol */
+  color: #fff; /* Warna teks tombol */
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.project-button button:hover {
+  background-color: #fff; /* Warna latar belakang tombol saat dihover */
+  color: #ff6600; /* Warna teks tombol saat dihover */
+}
+
+
+.kodfun-galeri {
+    display: flex;
+	height: 20rem;
+	gap: 1rem
+}
+
+.kodfun-galeri > div {
+	flex: 2;
+	border-radius: 1rem;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: auto 100%;
+	transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+		
+.kodfun-galeri > div:hover {
+    flex: 5;
+    transform: scale(1.05);
+}
+
+.social-icons {
+    display: flex;
+    gap: 10px; /* Jarak antara ikon-ikon */
+}
+
+.social-link {
+    display: inline-block;
+    width: 40px; /* Lebar ikon */
+    height: 40px; /* Tinggi ikon */
+    border-radius: 50%; /* Membuat ikon berbentuk lingkaran */
+    overflow: hidden; /* Menghindari masalah overflow jika ikon terlalu besar */
+}
+
+.social-link img {
+    width: 100%; /* Mengisi area ikon */
+    height: 100%; /* Mengisi area ikon */
+    object-fit: cover; /* Memastikan ikon terisi dengan baik */
+}
+
+
+/* ... Add more specific styles for other sections as needed */
+
+	</style>
+</head>
+<body>
+	<header>
+		<nav>
+			<div class="logo">
+				<div class="letters">
+					<span class="letter">P</span>
+					<span class="letter">O</span>
+					<span class="letter">R</span>
+					<span class="letter">T</span>
+					<span class="letter">F</span>
+					<span class="letter">O</span>
+					<span class="letter">L</span>
+					<span class="letter">I</span>
+					<span class="letter">O</span>
+				</div>
+			</div>
+			<ul>
+				<li><a href="#about">About Me</a></li>
+				<li><a href="#projects">projects</a></li>
+				<li><a href="#contact">Contact</a></li>
+			</ul>
+		</nav>
+	</header>
+	<main>
+		<section id="about" class="section">
+			<div class="container">
+				<h2>About Me</h2>
+                <figure class="media" id="div-img">
+                    <!--src pertemuan depan kita isi dengan foto masing2-->               
+                    <img
+                    class="media_img"
+                    id="image"
+                    src="https://images.alphacoders.com/129/1295535.png" 
+                    alt="Alissia as SMK Negeri 10 Semarang Student">
+                    <figcaption id="img-caption" class="media_caption">Nama Saya Alissia Sintawandani, Saya adalah seorang siswi SMKN 10 SEMARANG.
+                        Jurusan yang Saya ambil saat ini adalah Pengembangan Perangkat Lunak dan Gim (PPLG). 
+                        Saat ini Saya sudah duduk di bangku kelas XI, akan tetapi banyak sekali hal yang tidak Saya mengerti dan pahami.</figcaption>
+                </figure>
+			</div>
+		</section>
+		<section id="projects" class="section">
+			<div class="container">
+				<h2>Projects</h2>
+				<div class="project">
+                    <h3>Proyek 1</h3>
+                    <p>Proyek pertama Saya saat kelas X adalah membuat Form Pendaftaran.</p>
+                    <a href="file:///C:/Users/HP/Documents/HTML%20dasar/Form%20pendaftaran/Komunitas%20baca.html" class="project-button">
+                        <button>Klik disini</button>
+                    </a>
+                </div>
+                <div class="project">
+                    <h3>Proyek 2</h3>
+                    <p>Ini adalah tugas-tugas desain grafis saat Saya kelas X.</p><br>
+                    <div class="kodfun-galeri">
+                        <div style="background-image: url(logo\ kacang\ garuda\ 2.png);"></div>
+                        <div style="background-image: url(apel.png);"></div>
+                        <div style="background-image: url(alis.png);"></div>
+                        <div style="background-image: url(denah\ cinta.png);"></div>
+                        <div style="background-image: url(hati.png);"></div>
+                    </div>
+                </div>
+                <div class="project">
+                    <h3>Proyek 3</h3>
+                    <p>Ini adalah proyek Saya selama kelas industri dengan Telkom.</p>
+                    <a href="https://alissiabiography.pages.dev/" class="project-button">
+                        <button>Klik disini</button>
+                    </a>
+                </div>
+			</div>
+		</section>
+		<section id="contact" class="section">
+			<div class="container">
+				<h2>Contact</h2>
+				<div class="social-icons">
+                    <a class="social-link" data-url="https://www.freepik.com/icon/instagram_4923005#fromView=resource_detail&position=8" href="https://www.instagram.com/pro_ebook_creators/">
+                      <img src="instagram.png" alt="Instagram">
+                    </a>
+                    <a class="social-link" data-url="https://www.freepik.com/icon/github_4926625#fromView=resource_detail&position=5" href="https://github.com/alissiaxirpl2">
+                      <img src="github.png" alt="GitHub">
+                    </a>
+
+                    
+                  </div>
+			</div>
+		</section>
+	</main>
+	<script>
+        // Fungsi untuk mengubah warna latar belakang navigasi saat scroll
+    window.addEventListener('scroll', () => {
+      const nav = document.querySelector('nav');
+      if (window.scrollY > 50) {
+        nav.style.backgroundColor = '#000';
+      } else {
+        nav.style.backgroundColor = 'transparent';
+      }
+    });
+		// script.js
+const letters = document.querySelectorAll('.letter');
+
+letters.forEach(letter => {
+	letter.addEventListener('mouseenter', () => {
+		letter.style.transform = 'translateY(-1rem)';
+		letter.style.background = 'linear-gradient(120deg, hsl(19, 90%, 52%), hsl(56, 100%, 50%))';
+		letter.style.webkitBackgroundClip = 'text';
+		letter.style.webkitTextFillColor = 'transparent';
+	});
+
+	letter.addEventListener('mouseleave', () => {
+		letter.style.transform = 'translateY(0)';
+		letter.style.background = 'none';
+		letter.style.webkitBackgroundClip = 'unset';
+		letter.style.webkitTextFillColor = 'initial';
+	});
+});
+
+	</script>
+</body>
+</html>
